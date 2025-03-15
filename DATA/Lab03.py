@@ -16,16 +16,11 @@ def splitDataRandom(dataset):
     random.shuffle(shuffled)        # Randomly shuffle the dataset (for more randomness)
 
     # Portion and assign the data into 70%, 15%, and 15% respectively
-    total_length = len(dataset)
-    train_end = int(total_length * 0.7)
-    val_end = train_end + int(total_length * 0.15)      # And test data is the rest of it!
+    split_index = int(len(shuffled) * 0.8)
+    train_data = shuffled[:split_index]
+    test_data = shuffled[split_index:]
 
-    # Split the data into three parts
-    train = shuffled[:train_end]
-    validate = shuffled[train_end:val_end]
-    test_data = shuffled[val_end:]
-
-    return train, validate, test_data
+    return train_data, test_data
 
 def main():
 
