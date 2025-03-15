@@ -6,7 +6,7 @@ Output labels (What does the dataset predict?): Outputs Mean, Maximum value, Min
 
 Dataset source (Where did you find it?): Kaggle.com
 
-How to run the code?:  --file Lab03.py "Most Streamed Spotify Songs 2024.csv"
+How to run the code?:  python Lab03.py --file "Most Streamed Spotify Songs 2024.csv"
 
 Group member contributions:
 Seven Son: splitData(), analyzeData() and main()
